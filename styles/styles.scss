@@ -92,7 +92,7 @@ body{
         text-shadow: 3px 4px black;
     }
 }
-.tarjeta-producto2{
+.tarjeta-producto2, .tarjeta-producto{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -123,9 +123,14 @@ body{
         border: 1px solid white;
         background-color: rgba(255, 255, 255, 0.315);
     }
+    .precio-producto{
+        color:$color-letra;
+        font-size: 1rem;
+        font-family: $fuente;
+    }
 }
-.tarjeta-producto2:hover{
-    transform: scale(1.04);
+.tarjeta-producto2:hover, .tarjeta-producto:hover{
+    transform: scale(1.03);
 }
 
 // FOOTER
