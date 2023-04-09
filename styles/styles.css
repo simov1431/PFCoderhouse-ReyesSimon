@@ -19,7 +19,7 @@
 }
 
 body {
-  background-image: url("img/background3.png");
+  background-image: url("img/background3.jpg");
 }
 
 .titulo-seccion, .titulo-seccion h3 {
@@ -180,7 +180,7 @@ body {
 .footer-content .ig-icon {
   justify-self: end;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 601;
 }
 .footer-content #logo-footer {
   justify-self: start;
