@@ -15,14 +15,14 @@ $fuente: 'Ubuntu', sans-serif;
         font-size: 28px;
         color: $color-letra;
     }
-    p{
+    p{  
         color: $color-letra;
         font-family: $fuente;
         margin: 0;
     }
 }
 body{
-    background-image: url('img/background3.png');
+    background-image: url('img/background3.jpg');
 }
 .titulo-seccion, .titulo-seccion h3{
     color: $color-letra;
