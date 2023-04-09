@@ -19,7 +19,7 @@
 }
 
 body {
-  background-image: url("/img/background3.png");
+  background-image: url("img/background3.png");
 }
 
 .titulo-seccion, .titulo-seccion h3 {
@@ -85,7 +85,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 40vh;
-  background-image: url(/img/jorispresentacion2.jpg);
+  background-image: url(img/jorispresentacion2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
