@@ -22,7 +22,7 @@ $fuente: 'Ubuntu', sans-serif;
     }
 }
 body{
-    background-image: url('/img/background3.jpg');
+    background-image: url('../img/background3.jpg');
 }
 .titulo-seccion, .titulo-seccion h3{
     color: $color-letra;
@@ -83,7 +83,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 40vh;
-    background-image: url(img/jorispresentacion2.jpg);
+    background-image: url(../img/jorispresentacion2.jpg);
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;
