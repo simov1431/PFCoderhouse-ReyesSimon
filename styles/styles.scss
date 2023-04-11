@@ -6,6 +6,7 @@ $fuente: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
     // user-select: none;
     a{
         color:$color-letra;
@@ -59,6 +60,12 @@ body{
 .nav-link.nav-link:-webkit-any-link{
     color: #fff;
 }
+.navbar-container{
+    background-color: black;
+}
+.navbar-collapse{
+    transition: ease 0.5s;
+}
 .navbar-toggler:focus {
     text-decoration: none;
     outline:none;
@@ -75,7 +82,7 @@ body{
 }
 // ------------------------------------------------------
 
-// INDEX MAIN
+// INDEX MAIN and ARTICULOS
 .slogan{
     width: 100%;
     display: flex;
@@ -92,6 +99,9 @@ body{
     .titulo-seccion{
         text-shadow: 3px 4px black;
     }
+}
+.container-novedades{
+    margin: 0;
 }
 .tarjeta-producto2, .tarjeta-producto{
     display: flex;

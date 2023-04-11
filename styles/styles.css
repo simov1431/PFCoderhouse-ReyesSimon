@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 * a {
   color: #fff;
@@ -61,6 +62,14 @@ body {
   color: #fff;
 }
 
+.navbar-container {
+  background-color: black;
+}
+
+.navbar-collapse {
+  transition: ease 0.5s;
+}
+
 .navbar-toggler:focus {
   text-decoration: none;
   outline: none;
@@ -94,6 +103,10 @@ body {
 }
 .slogan .titulo-seccion {
   text-shadow: 3px 4px black;
+}
+
+.container-novedades {
+  margin: 0;
 }
 
 .tarjeta-producto2, .tarjeta-producto {
