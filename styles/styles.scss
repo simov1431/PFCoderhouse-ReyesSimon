@@ -46,6 +46,7 @@ body{
     padding: 0;
     height: 95px;
 }
+
 .nav-link{
     color: $color-letra;
     font-size: $tamaño-letra;
@@ -61,7 +62,7 @@ body{
     color: #fff;
 }
 .navbar-container{
-    background-color: black;
+    background-image: url('../img/background3.jpg');
 }
 .navbar-collapse{
     transition: ease 0.5s;
@@ -72,10 +73,14 @@ body{
     box-shadow: 0 0 0 0;
 }
 .dropdown-menu{
-    background-color:rgb(3, 5, 7) ;
+    background-color:rgb(0, 0, 0, 0) ;
     border-radius: none;
     transition: all 0.5ms;
     --bs-dropdown-link-active-bg:$color-letra;
+    li{
+        width: fit-content;
+        margin: auto;
+    }
 }
 .dropdown-item{
     color: $color-letra;
