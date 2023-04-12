@@ -158,12 +158,14 @@ body{
     font-family: $fuente;
     font-size: 1.75rem;
     text-shadow: 4px 4px black;
+    padding: 20px;
 }
 .imagen-compras{
     display: flex;
     justify-content: end;
     height: 50%;
     width: 80%;
+    padding: 20px;
     margin-bottom: 30px;
     img{
         border-radius: 10px;

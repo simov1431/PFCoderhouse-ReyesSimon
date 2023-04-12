@@ -163,6 +163,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.75rem;
   text-shadow: 4px 4px black;
+  padding: 20px;
 }
 
 .imagen-compras {
@@ -170,6 +171,7 @@ body {
   justify-content: end;
   height: 50%;
   width: 80%;
+  padding: 20px;
   margin-bottom: 30px;
 }
 .imagen-compras img {
