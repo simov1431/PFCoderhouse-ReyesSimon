@@ -21,6 +21,9 @@ $fuente: 'Ubuntu', sans-serif;
         font-family: $fuente;
         margin: 0;
     }
+    .row{
+        margin: 0;
+    }
 }
 body{
     background-image: url('../img/background3.jpg');
@@ -174,9 +177,13 @@ body{
 //ABOUT US
 .main-container{
     height: min-content;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 .container-aboutus{
     display: flex;
@@ -216,9 +223,100 @@ body{
         width: 100%;
     }
 }
-
-
-
+//----------------------------------------
+//CONTACTO
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+input, textarea, .boton-enviar{
+    background-color: rgba(255, 255, 255, 0.315);
+    width: 50%;
+    height: 10%;
+    color: $color-letra;
+    padding-left: 10px;
+    font-family: $fuente;
+    font-size: 1rem;
+    margin: 10px;
+    border: none;
+    box-shadow: 5px 5px rgba(172, 227, 187, 0.5);
+}
+textarea{
+    resize: none;
+    padding-top: 10px;
+    height: 30%;
+}
+.boton-enviar{
+    width: 25%;
+}
+.boton-enviar:hover{
+    cursor: pointer;
+}
+input:focus, textarea:focus, .boton-enviar:focus{
+    outline: none;
+}
+::placeholder{
+    color: $color-letra;
+    font-size: 1rem;
+    font-family: $fuente;
+}
+.otra-forma-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 30px;
+}
+.titulo-otra-forma-contacto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.redes-otra-forma-contacto{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    a{
+        justify-self: center;
+    }
+}
+@media (max-width: 1300px){
+    .redes-otra-forma-contacto, .titulo-otra-forma-contacto{
+        width: 75%;
+    }
+}
+.mapa-contacto{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/3;
+    iframe{
+        box-shadow: 5px 5px rgba(172, 227, 187, 0.5);
+    }
+}
+@media (max-width: 786px) {
+    .formulario-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width:786px) and (max-width: 1100px){
+    .boton-enviar{
+        height: 15%;
+    }
+}
 // FOOTER
 .footer{
     margin-top: 30px;
