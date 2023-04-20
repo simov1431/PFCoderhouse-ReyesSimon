@@ -24,13 +24,14 @@
 
 body {
   background-image: url("../img/background3.jpg");
+  width: 100%;
 }
 
-.titulo-seccion, .titulo-seccion h3 {
+.titulo-seccion {
   color: #fff;
-  font-size: 64px;
+  font-size: 4rem;
   text-decoration: underline;
-  margin-top: 15px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -38,14 +39,26 @@ body {
 .subtitulo-seccion {
   font-family: "Ubuntu", sans-serif;
   color: #fff;
-  font-size: 2em;
+  font-size: 2rem;
+  margin-top: 10px;
   text-shadow: 4px 4px black;
+}
+
+.main-container {
+  height: min-content;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar {
   border-bottom: 1px solid #fff;
   padding: 0;
   height: 95px;
+  z-index: 1;
 }
 
 .nav-link {
@@ -77,6 +90,7 @@ body {
   text-decoration: none;
   outline: none;
   box-shadow: 0 0 0 0;
+  transition: all 0.5ms;
 }
 
 .dropdown-menu {
@@ -108,12 +122,20 @@ body {
   background-repeat: fixed;
   border-bottom: 1px solid #f5f5f5;
 }
-.slogan .titulo-seccion {
+.slogan .titulo-slogan {
+  color: #fff;
+  font-size: 4rem;
+  text-decoration: underline;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
   text-shadow: 3px 4px black;
 }
 
 .container-novedades {
+  width: 100%;
   margin: 0;
+  padding: 0;
 }
 
 .tarjeta-producto2, .tarjeta-producto {
@@ -158,12 +180,28 @@ body {
   transform: scale(1.03);
 }
 
+@media (max-width: 576px) {
+  .titulo-slogan {
+    font-size: 1rem;
+  }
+  .navbar-brand img {
+    width: 220px;
+  }
+}
 .seccion-compras {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.75rem;
   text-shadow: 4px 4px black;
   padding: 20px;
+}
+.seccion-compras .como-comprar a {
+  border: 2px solid white;
+  padding: 3px;
+  margin-top: 5px;
+}
+.seccion-compras .como-comprar a:hover {
+  background-color: rgba(255, 255, 255, 0.315);
 }
 
 .imagen-compras {
@@ -182,16 +220,11 @@ body {
   object-position: top;
 }
 
-.main-container {
-  height: min-content;
-  width: 100vw;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 476px) {
+  .seccion-compras {
+    font-size: 1rem;
+  }
 }
-
 .container-aboutus {
   display: flex;
   justify-content: center;
@@ -199,23 +232,56 @@ body {
   margin: 30px auto 30px auto;
 }
 
-.imagen-aboutus {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
-.imagen-aboutus img {
-  width: 75%;
-  border-radius: 10px;
-}
-
 .p-aboutus {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50%;
   color: #fff;
+  font-size: 1.5rem;
   font-family: "Ubuntu", sans-serif;
+}
+
+.carousel {
+  width: 100%;
+}
+.carousel .carousel-opinion {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel h3 {
+  text-decoration: underline;
+  text-shadow: none;
+  margin-bottom: 15px;
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out;
+}
+.carousel-item img {
+  filter: brightness(0.6);
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+  color: #fff;
+}
+
+.carousel-caption i {
+  padding: 0 2px;
+  color: gold;
+  text-shadow: 2px 2px black;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: 2px 2px black;
 }
 
 @media (max-width: 1200px) {

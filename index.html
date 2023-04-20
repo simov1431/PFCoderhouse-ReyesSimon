@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Joris Alpargatas Simplicidad y estilo El mejor calzado del Uruguay">
-    
+    <meta name="robots" content="index,follow">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
@@ -43,12 +44,11 @@
                   </li>
                 </ul>
               </nav>
-            <div class="navbar-brand"><a class="navbar-brand" href="./index.html"><img src="img/logo4.jpg"></a></div>
-            <div class="d-none d-lg-block navbar-icon"><a href="" class="cart-icon"><i class="bi bi-cart"></i></a></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="bi bi-list"></i></span>
             </button>
-          
+            <div class="navbar-brand"><a class="navbar-brand" href="./index.html"><img src="img/logo4.jpg"></a></div>
+            <div class="d-none d-lg-block navbar-icon"><a href="" class="cart-icon"><i class="bi bi-cart"></i></a></div>
         </div>
       </header>
 
@@ -56,26 +56,26 @@
     <div class="main-container container-lg container-fluid ">
     
        <div class="slogan container-lg container-fluid">
-            <h2 class="titulo-seccion">Simplicidad y estilo</h2>
-            <h3 class="subtitulo-seccion">Tu calzado de confianza</h3>
+            <h1 class="titulo-slogan">Simplicidad y estilo</h1>
+            <h2 class="subtitulo-seccion">Tu calzado de confianza</h2>
        </div>
        <div class="titulo-seccion">
-          <h3>Novedades</h3>
+          <h2>Novedades</h2>
        </div>
-       <div class="seccion-novedades">
+       <div class="seccion-novedades container-fluid">
             <div class="container-novedades container-lg container-fluid row  justify-content-center">
-                <article class="tarjeta-producto2">
-                    <h3 class="titulo-producto">Modelo Y</h3>
+                <article class="tarjeta-producto2" data-aos="flip-right">
+                    <h3 class="titulo-producto">Modelo Miami</h3>
                     <img src="img/joris3.jpg" alt="">
                     <a href="" class="boton-producto">Ver más</a>
                 </article>
-                <article class="tarjeta-producto2">
-                    <h3 class="titulo-producto">Modelo Z</h3>
+                <article class="tarjeta-producto2" data-aos="flip-right">
+                    <h3 class="titulo-producto">Modelo Ardenas</h3>
                     <img src="img/joris4.jpg" alt="">
                     <a href="" class="boton-producto">Ver más</a>
                 </article>
-                <article class="tarjeta-producto2">
-                    <h3 class="titulo-producto">Modelo W</h3>
+                <article class="tarjeta-producto2" data-aos="flip-right">
+                    <h3 class="titulo-producto">Modelo Colorado</h3>
                     <img src="img/joris5.jpg" alt="">
                     <a href="" class="boton-producto">Ver más</a>
                 </article>
@@ -97,7 +97,11 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
    
 
 </html>
