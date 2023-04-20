@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:scss":"sass --watch styles.scss styles.css"
+    "watch":"sass --watch styles/styles.scss styles/styles.css"
   },
   "keywords": [],
   "author": "",
