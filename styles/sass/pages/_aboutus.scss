@@ -1,0 +1,31 @@
+.container-aboutus{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px auto 30px auto;
+}
+.p-aboutus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: $color-letra;
+    font-size: 1.5rem;
+    font-family: $fuente;
+
+}
+@media (max-width:'1200px'){
+    .container-aboutus{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen-aboutus{
+        width: 100%;
+    }
+}
+@media (max-width:'768px'){
+    .p-aboutus{
+        width: 100%;
+    }
+}
