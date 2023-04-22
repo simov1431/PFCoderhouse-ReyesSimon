@@ -5,31 +5,46 @@
   box-sizing: border-box;
   text-align: center;
 }
-* a {
+
+body {
+  background-image: url("../img/background3.jpg");
+  width: 100%;
+}
+
+a {
   color: #fff;
   text-decoration: none;
 }
-* i {
-  font-size: 28px;
+
+i {
+  font-size: 1.75rem;
   color: #fff;
 }
-* p {
+
+p {
   color: #fff;
   font-family: "Ubuntu", sans-serif;
   margin: 0;
 }
-* .row {
+
+.row {
   margin: 0;
 }
-*::selection {
+
+::selection {
   background: white;
   color: black;
   text-shadow: none;
 }
 
-body {
-  background-image: url("../img/background3.jpg");
+.main-container {
+  height: min-content;
   width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .titulo-seccion {
@@ -47,16 +62,6 @@ body {
   font-size: 2rem;
   margin-top: 10px;
   text-shadow: 4px 4px black;
-}
-
-.main-container {
-  height: min-content;
-  width: 100%;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .navbar {
@@ -319,6 +324,7 @@ body {
 .carousel-caption p {
   font-size: 1.2rem;
   font-weight: 500;
+  font-style: italic;
   text-shadow: 2px 2px black;
 }
 
@@ -391,6 +397,11 @@ textarea:focus {
   box-shadow: 5px 5px rgba(172, 227, 187, 0.5);
 }
 
+@media (min-width: 576px) and (max-width: 991px) {
+  input, textarea {
+    width: 75%;
+  }
+}
 .container-novedades {
   width: 100%;
   margin: 0;
@@ -405,7 +416,7 @@ textarea:focus {
     width: 220px;
   }
 }
-.container-novedades {
+.container-productos {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -424,7 +435,7 @@ textarea:focus {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.75rem;
   text-shadow: 2px 2px black;
-  padding: 20px;
+  padding: 1em;
 }
 .seccion-compras .como-comprar a {
   border: 2px solid white;
@@ -464,6 +475,11 @@ textarea:focus {
     align-items: center;
   }
   .imagen-aboutus {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .p-aboutus {
     width: 100%;
   }
 }

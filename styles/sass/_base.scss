@@ -9,31 +9,40 @@ $carousel-transition: transform $carousel-transition-duration ease-in-out;
     box-sizing: border-box;
     text-align: center;
     // user-select: none;
-    a{
-        color:$color-letra;
-        text-decoration: none;
-    }
-    i{
-        font-size: 28px;
-        color: $color-letra;
-    }
-    p{  
-        color: $color-letra;
-        font-family: $fuente;
-        margin: 0;
-    }
-    .row{
-        margin: 0;
-    }
-    &::selection{
-        background: white;
-        color:black;
-        text-shadow: none;
-    }
 }
 body{
     background-image: url('../img/background3.jpg');
     width: 100%;
+}
+a{
+        color:$color-letra;
+        text-decoration: none;
+}
+i{
+        font-size: 1.75rem;
+        color: $color-letra;
+}
+p{  
+        color: $color-letra;
+        font-family: $fuente;
+        margin: 0;
+}
+.row{
+        margin: 0;
+}
+::selection{
+        background: white;
+        color:black;
+        text-shadow: none;
+}
+.main-container{
+    height: min-content;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .titulo-seccion{
     color: $color-letra;
@@ -49,13 +58,4 @@ body{
     font-size: 2rem;
     margin-top: 10px;
     text-shadow: 4px 4px black;
-}
-.main-container{
-    height: min-content;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }

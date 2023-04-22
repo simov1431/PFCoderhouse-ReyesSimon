@@ -8,7 +8,7 @@
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,13 +18,12 @@
 </head>
 
 <body class="d-flex flex-column justify-content-center align-items-center min-vh-100">
-
   <header class="navbar navbar-expand-lg bg-transparent container-fluid">
     <div class="navbar-container container-lg container-fluid">
         <nav class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda </a>
@@ -47,15 +46,16 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span><i class="bi bi-list"></i></span>
         </button>
-        <div class="navbar-brand"><a class="navbar-brand" href="./index.html"><img src="img/logo4.jpg"></a></div>
+        <div class="navbar-brand"><a class="navbar-brand" href="../index.html"><img src="../img/logo4.jpg"></a></div>
         <div class="d-none d-lg-block navbar-icon"><a href="" class="cart-icon"><i class="bi bi-cart"></i></a></div>
     </div>
   </header>
-
+  <main>
     <div class="main-container">
-        <div class="titulo-seccion">
-            <h2>Contacto</h2>
-        </div>
+      <div class="titulo-seccion">
+          <h1>Contacto</h1>
+      </div>
+      <section>
         <div class="formulario-container container row" data-aos="flip-right">
             <div class="formulario-contacto col-xl-6">
                 <input type="text" placeholder="Nombre y apellido" required>
@@ -65,7 +65,7 @@
             </div>
             <div class="otra-forma-contacto col-xl-6" data-aos="flip-right">
                 <div class="titulo-otra-forma-contacto">
-                    <h4 class="subtitulo-seccion">Si no, mediante Whatsapp o Instagram de 10:00hs a 20:00hs</h4>    
+                    <h2 class="subtitulo-seccion">Si no, mediante Whatsapp o Instagram de 10:00hs a 20:00hs</h2>    
                 </div>
                 <div class="redes-otra-forma-contacto">
                     <a href="https://instagram.com/joris.uy/" target="_blank" class="ig-icon ig-icon-contacto" ><i class="bi bi-instagram"></i></ion-icon></a>
@@ -78,22 +78,24 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10015.515675520679!2d2.7544192908275793!3d51.12914139416896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dcbb4131f999db%3A0x5fc21a39da5cc641!2sSint-Joris%2C%208620%20Nieuwpoort%2C%20B%C3%A9lgica!5e0!3m2!1ses!2suy!4v1679284178842!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+      </section>
     </div>
-    <footer class="footer container-fluid">
-      <div class="footer-content container-fluid">
-          <a href="./index.html" id="logo-footer" class="d-none d-md-block"><img src="img/logo4.jpg"></a>
-          <p class="footer-copyright">Copyright &copy; Joris UY 2023</p>
-          <a href="https://instagram.com/joris.uy/"  target="_blank" class="ig-icon d-none d-sm-block"><i class="bi bi-instagram"></i></a>
-      </div>
-    </footer>
+  </main>
+  <footer class="footer container-fluid">
+    <div class="footer-content container-fluid">
+        <a href="../index.html" id="logo-footer" class="d-none d-md-block"><img src="../img/logo4.jpg"></a>
+        <p class="footer-copyright">Copyright &copy; Joris UY 2023</p>
+        <a href="https://instagram.com/joris.uy/"  target="_blank" class="ig-icon d-none d-sm-block"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

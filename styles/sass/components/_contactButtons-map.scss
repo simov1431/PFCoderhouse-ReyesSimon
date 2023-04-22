@@ -45,3 +45,8 @@ textarea{
         box-shadow: 5px 5px rgba(172, 227, 187, 0.5);
     }
 }
+@media (min-width:576px) and (max-width:991px){
+    input,textarea{
+        width: 75%;
+    }
+}
