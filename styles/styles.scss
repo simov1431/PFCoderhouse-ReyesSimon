@@ -1,0 +1,20 @@
+//google font
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Ubuntu&display=swap');
+//importar partials
+@import "./sass/base";
+@import './sass/variables';
+@import './sass/components/navbar';
+@import './sass/components/footer';
+@import './sass/components/cards';
+@import './sass/components/slogan';
+@import './sass/components/imagen-compras';
+@import './sass/components/carousel';
+@import './sass/components/contactButtons-map';
+@import './sass/components/modal';
+@import './sass/pages/index';
+@import './sass/pages/articulos';
+@import './sass/pages/compra';
+@import './sass/pages/aboutus';
+@import './sass/pages/contact';
+
+

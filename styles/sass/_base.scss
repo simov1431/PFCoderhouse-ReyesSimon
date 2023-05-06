@@ -35,7 +35,11 @@ p{
         color:black;
         text-shadow: none;
 }
-.main-container{
+main{
+    z-index: 5;
+}
+.main-container{    
+    z-index: 3;
     height: min-content;
     width: 100%;
     padding: 0;

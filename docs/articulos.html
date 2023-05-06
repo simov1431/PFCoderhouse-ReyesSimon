@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Playfair+Display&display=swap" rel="stylesheet">
     <title>Artículos</title>
 </head>
@@ -62,37 +63,158 @@
                       <h2 class="titulo-producto">Modelo Nirvana</h2>
                       <img src="../img/joris2.jpg" alt="Joris alpargatas modelo Nirvana">
                       <span class="precio-producto">$1500</span>
-                      <a href="" class="boton-producto">Comprar</a>
+                      <button data-modal="modal1" class="boton-producto boton-abrirModal">Comprar</button>
                   </article>
                   <article class="tarjeta-producto" data-aos="zoom-in">
                       <h2 class="titulo-producto">Modelo Miami</h2>
                       <img src="../img/joris3.jpg" alt="Joris alpargatas modelo Miami">
                       <span class="precio-producto">$1500</span>
-                      <a href="" class="boton-producto">Comprar</a>
+                      <button data-modal="modal2" class="boton-producto boton-abrirModal">Comprar</button>
                   </article>
                   <article class="tarjeta-producto" data-aos="zoom-in">
                       <h2 class="titulo-producto">Modelo Ardenas</h2>
                       <img src="../img/joris4.jpg" alt="Joris alpargatas modelo Ardenas">
                       <span class="precio-producto">$1350</span>
-                      <a href="" class="boton-producto">Comprar</a>
+                      <button data-modal="modal3" class="boton-producto boton-abrirModal">Comprar</button>
                   </article>
                   <article class="tarjeta-producto" data-aos="zoom-in">
                       <h2 class="titulo-producto">Modelo Colorado</h2>
                       <img src="../img/joris5.jpg" alt="Joris alpargatas modelo Colorado">
                       <span class="precio-producto">$1050</span>
-                      <a href="" class="boton-producto">Comprar</a>
+                      <button data-modal="modal4" class="boton-producto boton-abrirModal">Comprar</button>
                   </article>
                   <article class="tarjeta-producto" data-aos="zoom-in">
                       <h2 class="titulo-producto">Modelo Pampa</h2>
                       <img src="../img/joris6.jpg" alt="Joris alpargatas modelo Pampa">
                       <span class="precio-producto">$1050</span>
-                      <a href="" class="boton-producto">Comprar</a>
+                      <button data-modal="modal5" class="boton-producto boton-abrirModal">Comprar</button>
                   </article>
+                  <div class="myModal" id="modal1">
+                    <div class="modal-container">
+                      <div class="modal-body">
+                        <h3>Modelo Nirvana - $1500</h3>
+                        <button id="boton-cerrarModal" class="boton-cerrarModal">&times;</button>
+                        <p>Modelo Nirvana<br>Cómodas zapatillas de lona de alta calidad.</p>
+                        <img src="../img/joris2.jpg" alt="Joris alpargatas modelo Nirvana">
+                      </div>
+                      <div class="modal-buttons">
+                        <label for="selector-talle1">Elige tu talle:</label>
+                        <select class="selector" name="selector-talle1" id="selector-talle1">
+                          <option value="40">40</option>
+                          <option value="41">41</option>
+                          <option value="42">42</option>
+                          <option value="43">43</option>
+                          <option value="44">44</option>
+                          <option value="45">45</option>
+                          <option value="46">46</option>
+                        </select>                         
+                        <button class="boton-producto">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="myModal" id="modal2">
+                    <div class="modal-container">
+                      <div class="modal-body">
+                        <h3>Modelo Miami - $1500</h3>
+                        <button id="boton-cerrarModal" class="boton-cerrarModal">&times;</button>
+                        <p>Modelo Miami<br>Cómodas zapatillas de lona de alta calidad.</p>
+                        <img src="../img/joris3.jpg" alt="Joris alpargatas modelo Miami">
+                      </div>
+                      <div class="modal-buttons">
+                        <label for="selector-talle2">Elige tu talle:</label>
+                        <select class="selector" name="selector-talle2" id="selector-talle2">
+                          <option value="40">40</option>
+                          <option value="41">41</option>
+                          <option value="42">42</option>
+                          <option value="43">43</option>
+                          <option value="44">44</option>
+                          <option value="45">45</option>
+                          <option value="46">46</option>
+                        </select>                         
+                        <button class="boton-producto">Comprar</button>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="myModal" id="modal3">
+                    <div class="modal-container">
+                      <div class="modal-body">
+                        <h3>Modelo Ardenas - $1350</h3>
+                        <button id="boton-cerrarModal" class="boton-cerrarModal">&times;</button>
+                        <p>Modelo Ardenas<br>Cómodas zapatillas de lona de alta calidad.</p>
+                        <img src="../img/joris4.jpg" alt="Joris alpargatas modelo Ardenas">
+                      </div>
+                      <div class="modal-buttons">
+                        <label for="selector-talle3">Elige tu talle:</label>
+                        <select class="selector" name="selector-talle3" id="selector-talle3">
+                          <option value="40">40</option>
+                          <option value="41">41</option>
+                          <option value="42">42</option>
+                          <option value="43">43</option>
+                          <option value="44">44</option>
+                          <option value="45">45</option>
+                          <option value="46">46</option>
+                        </select>                         
+                        <button class="boton-producto">Comprar</button>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="myModal" id="modal4">
+                    <div class="modal-container">
+                      <div class="modal-body">
+                        <h3>Modelo Colorado - $1050</h3>
+                        <button id="boton-cerrarModal" class="boton-cerrarModal">&times;</button>
+                        <p>Modelo Colorado<br>Cómodas zapatillas de lona de alta calidad.</p>
+                        <img src="../img/joris5.jpg" alt="Joris alpargatas modelo Colorado">
+                      </div>
+                      <div class="modal-buttons">
+                        <label for="selector-talle4">Elige tu talle:</label>
+                        <select class="selector" name="selector-talle4" id="selector-talle4">
+                          <option value="40">40</option>
+                          <option value="41">41</option>
+                          <option value="42">42</option>
+                          <option value="43">43</option>
+                          <option value="44">44</option>
+                          <option value="45">45</option>
+                          <option value="46">46</option>
+                        </select>                         
+                        <button class="boton-producto">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="myModal" id="modal5">
+                    <div class="modal-container">
+                      <div class="modal-body">
+                        <h3>Modelo Pampa - $1050</h3>
+                        <button id="boton-cerrarModal" class="boton-cerrarModal">&times;</button>
+                        <p>Modelo Pampa<br>Cómodas zapatillas de lona de alta calidad.</p>
+                        <img src="../img/joris6.jpg" alt="Joris alpargatas modelo Pampa">
+                      </div>
+                      <div class="modal-buttons">
+                        <label for="selector-talle5">Elige tu talle:</label>
+                        <select class="selector" name="selector-talle5" id="selector-talle5">
+                          <option value="40">40</option>
+                          <option value="41">41</option>
+                          <option value="42">42</option>
+                          <option value="43">43</option>
+                          <option value="44">44</option>
+                          <option value="45">45</option>
+                          <option value="46">46</option>
+                        </select>                         
+                        <button class="boton-producto">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
           </div> 
       </div>
     </section>
+    <div class="dark-overlay"></div>
   </main>
+
   <footer class="footer container-fluid">
     <div class="footer-content container-fluid">
         <a href="../index.html" id="logo-footer" class="d-none d-md-block"><img src="../img/logo4.jpg"></a>
@@ -108,7 +230,7 @@
     <script>
       AOS.init();
     </script>
-
+    <script src="/modal.js"></script>
 </body>
 </html>
 

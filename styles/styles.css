@@ -37,7 +37,12 @@ p {
   text-shadow: none;
 }
 
+main {
+  z-index: 5;
+}
+
 .main-container {
+  z-index: 3;
   height: min-content;
   width: 100%;
   padding: 0;
@@ -181,11 +186,12 @@ p {
   margin: 0;
   color: whitesmoke;
   font-size: 1.5rem;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   user-select: none;
 }
 .container-productos .tarjeta-producto .boton-producto {
   padding: 3px;
+  color: white;
   border-radius: 3px;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.315);
@@ -224,11 +230,12 @@ p {
   margin: 0;
   color: whitesmoke;
   font-size: 1.5rem;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   user-select: none;
 }
 .container-novedades .tarjeta-producto .boton-producto {
   padding: 3px;
+  color: white;
   border-radius: 3px;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.315);
@@ -400,6 +407,96 @@ textarea:focus {
 @media (min-width: 576px) and (max-width: 991px) {
   input, textarea {
     width: 75%;
+  }
+}
+.myModal {
+  display: none;
+}
+
+.myModal.active {
+  display: flex;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(17, 17, 17, 0.7411764706);
+  position: fixed;
+  animation: modal-open 0.5s;
+}
+.myModal.active .modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  width: 450px;
+  height: 450px;
+  padding: 15px;
+  gap: 10px;
+  background-image: url(./../img/background3.jpg);
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+}
+.myModal.active .modal-container .modal-body {
+  display: grid;
+  grid-template-rows: 30px 50px 300px;
+  grid-template-columns: 1fr 30px;
+}
+.myModal.active .modal-container .modal-body .boton-cerrarModal {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  border-style: none;
+}
+.myModal.active .modal-container .modal-body h3 {
+  align-items: center;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+}
+.myModal.active .modal-container .modal-body p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+}
+.myModal.active .modal-container .modal-body img {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.myModal.active .modal-container .modal-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.myModal.active .modal-container .modal-buttons .boton-producto, .myModal.active .modal-container .modal-buttons .selector {
+  padding: 3px;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.315);
+}
+.myModal.active .modal-container .modal-buttons label {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+}
+.myModal.active .modal-container .modal-buttons option {
+  background-color: #000;
+}
+.myModal.active .modal-container .modal-buttons option:hover {
+  background-color: white;
+  color: #000;
+}
+
+@keyframes modal-open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .container-novedades {

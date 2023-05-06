@@ -8,9 +8,15 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch":"sass --watch styles/sass/styles.scss styles/styles.css"
+    "watch": "sass --watch styles/styles.scss styles/styles.css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootbox": "^6.0.0",
+    "codyframe": "^4.0.6",
+    "jquery": "^3.6.4",
+    "micromodal": "^0.4.10"
+  }
 }
