@@ -68,11 +68,11 @@
       </div>
       <section>
         <div class="formulario-container container row" data-aos="flip-right">
-          <form class="formulario-contacto col-xl-6" netlify>
-            <input type="text" placeholder="Nombre y apellido" required>
-            <input type="email" placeholder="Email" required>
-            <textarea cols="50" rows="3" placeholder="Mensaje" required></textarea>
-            <button class="boton-enviar" type="submit">Enviar mensaje</button>
+          <form class="formulario-contacto col-xl-6" data-netlify="true" name="contacto" method="POST">
+            <input type="text" placeholder="Nombre y apellido" name="nombre" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <textarea cols="50" rows="3" placeholder="Mensaje" name="mensaje" required></textarea>
+            <button class="boton-enviar" type="submit" name="boton-enviar">Enviar mensaje</button>
           </form>
           <div class="otra-forma-contacto col-xl-6" data-aos="flip-right">
             <div class="titulo-otra-forma-contacto">
