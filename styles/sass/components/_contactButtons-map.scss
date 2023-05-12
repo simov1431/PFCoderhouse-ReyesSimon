@@ -1,52 +1,56 @@
-@mixin contactObjects{
-    background-color: rgba(255, 255, 255, 0.315);
-    color: $color-letra;
-    padding-left: 10px;
-    font-family: $fuente;
-    font-size: 1rem;
-    margin: 10px;
-    border: none;
-    box-shadow: 5px 5px rgba(172, 227, 187, 0.5);
-    &:focus{
-        outline: none;
-    }
+@mixin contactObjects {
+  background-color: rgba(255, 255, 255, 0.315);
+  color: $color-letra;
+  padding-left: 10px;
+  font-family: $fuente;
+  font-size: 1rem;
+  margin: 10px;
+  border: none;
+  box-shadow: 5px 5px rgba(172, 227, 187, 0.5);
+  &:focus {
+    outline: none;
+  }
 }
-input{
+.formulario-contacto {
+  input {
     @include contactObjects();
     width: 50%;
     height: 10%;
-}
-textarea{
+  }
+  textarea {
     @include contactObjects();
     resize: none;
     padding-top: 10px;
     width: 50%;
     height: 30%;
-}
-.boton-enviar{
+  }
+  .boton-enviar {
     @include contactObjects();
     width: 25%;
     height: 10%;
-    &:hover{
-        cursor: pointer;
+    &:hover {
+      cursor: pointer;
     }
-}
-::placeholder{
+  }
+  ::placeholder {
     color: $color-letra;
     font-size: 1rem;
     font-family: $fuente;
+  }
 }
-.mapa-contacto{
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    grid-column: 1/3;
-    iframe{
-        box-shadow: 5px 5px rgba(172, 227, 187, 0.5);
-    }
+
+.mapa-contacto {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  grid-column: 1/3;
+  iframe {
+    box-shadow: 5px 5px rgba(172, 227, 187, 0.5);
+  }
 }
-@media (min-width:576px) and (max-width:991px){
-    input,textarea{
-        width: 75%;
-    }
+@media (min-width: 576px) and (max-width: 991px) {
+  input,
+  textarea {
+    width: 75%;
+  }
 }

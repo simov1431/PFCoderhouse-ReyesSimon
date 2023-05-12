@@ -1,65 +1,68 @@
 $color-letra: #fff;
 $tamaño-letra: 20px;
-$fuente: 'Ubuntu', sans-serif;
+$fuente: "Ubuntu", sans-serif;
 $carousel-transition-duration: 1s;
 $carousel-transition: transform $carousel-transition-duration ease-in-out;
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-align: center;
-    // user-select: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  // user-select: none;
 }
-body{
-    background-image: url('../img/background3.jpg');
-    width: 100%;
+body {
+  background-image: url("../img/background3.jpg");
+  width: 100%;
 }
-a{
-        color:$color-letra;
-        text-decoration: none;
+a {
+  color: $color-letra;
+  text-decoration: none;
 }
-i{
-        font-size: 1.75rem;
-        color: $color-letra;
+i {
+  font-size: 1.75rem;
+  color: $color-letra;
 }
-p{  
-        color: $color-letra;
-        font-family: $fuente;
-        margin: 0;
+p {
+  color: $color-letra;
+  font-family: $fuente;
+  margin: 0;
 }
-.row{
-        margin: 0;
+.row {
+  margin: 0;
 }
-::selection{
-        background: white;
-        color:black;
-        text-shadow: none;
+::selection {
+  background: white;
+  color: black;
+  text-shadow: none;
 }
-main{
-    z-index: 5;
+.boton-cerrar {
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border-style: none;
+  font-size: 1rem;
 }
-.main-container{    
-    z-index: 3;
-    height: min-content;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.main-container {
+  height: min-content;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-.titulo-seccion{
-    color: $color-letra;
-    font-size: 4rem;
-    text-decoration: underline;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+.titulo-seccion {
+  color: $color-letra;
+  font-size: 4rem;
+  text-decoration: underline;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
-.subtitulo-seccion{
-    font-family: $fuente;
-    color:$color-letra;
-    font-size: 2rem;
-    margin-top: 10px;
-    text-shadow: 4px 4px black;
+.subtitulo-seccion {
+  font-family: $fuente;
+  color: $color-letra;
+  font-size: 2rem;
+  margin-top: 10px;
+  text-shadow: 4px 4px black;
 }

@@ -1,0 +1,13 @@
+.boton-producto {
+  padding: 3px;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.315);
+  &:hover {
+    scale: (1.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-weight: 500;
+  }
+}

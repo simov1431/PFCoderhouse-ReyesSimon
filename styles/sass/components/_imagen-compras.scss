@@ -1,15 +1,15 @@
-.imagen-compras{
-    display: flex;
-    justify-content: end;
-    height: 50%;
-    width: 80%;
-    padding: 20px;
-    margin-bottom: 30px;
-    img{
-        border-radius: 10px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-    }
+.imagen-compras {
+  display: flex;
+  justify-content: end;
+  height: 50%;
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 30px;
+  img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
 }

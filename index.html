@@ -1,113 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Joris Alpargatas Simplicidad y estilo El mejor calzado del Uruguay">
-    <meta name="robots" content="index,follow">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Playfair+Display&display=swap" rel="stylesheet">
-    <title>JORIS</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Joris Alpargatas Simplicidad y estilo El mejor calzado del Uruguay" />
+  <meta name="robots" content="index,follow" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Playfair+Display&display=swap"
+    rel="stylesheet" />
+  <title>JORIS</title>
 </head>
 
 <body class="d-flex flex-column justify-content-center align-items-center min-vh-100">
   <header class="navbar navbar-expand-lg bg-transparent container-fluid">
-      <div class="navbar-container container-lg container-fluid">
-        <nav class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./docs/articulos.html">Artículos</a></li>
-                  <li><a class="dropdown-item" href="./docs/compra.html">Cómo comprar</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./docs/aboutus.html">Sobre nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./docs/contact.html">Contacto</a>
-              </li>
-              <li class="nav-item d-lg-none">
-                <a class="nav-link" href="#">Carrito <i class="bi bi-cart" style="font-size: 20px; font-weight: 500;"></i></a>
-              </li>
+    <div class="navbar-container container-lg container-fluid">
+      <nav class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Tienda </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./docs/articulos.html">Artículos</a></li>
+              <li><a class="dropdown-item" href="./docs/compra.html">Cómo comprar</a></li>
             </ul>
-          </nav>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="bi bi-list"></i></span>
-        </button>
-        <div class="navbar-brand"><a class="navbar-brand" href="./index.html"><img src="img/logo4.jpg" alt="Joris logo"></a></div>
-        <div class="d-none d-lg-block navbar-icon"><a href="" class="cart-icon"><i class="bi bi-cart"></i></a></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./docs/aboutus.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./docs/contact.html">Contacto</a>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">Carrito <i class="bi bi-cart"
+                style="font-size: 20px; font-weight: 500;"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="bi bi-list"></i></span>
+      </button>
+      <div class="navbar-brand"><a class="navbar-brand" href="../index.html"><img src="../img/logo4.jpg"></a></div>
+      <div class="d-none d-lg-block navbar-icon">
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"
+          class="cart-icon"><i class="bi bi-cart"></i></a>
+        <span class="contador-productos">0</span>
       </div>
+    </div>
   </header>
 
   <main>
-    <div class="main-container container-lg container-fluid ">
+    <div class="main-container container-lg container-fluid">
       <div class="slogan container-lg container-fluid">
-            <h1 class="titulo-slogan">Simplicidad y estilo</h1>
-            <h2 class="subtitulo-seccion">Tu calzado de confianza</h2>
+        <h1 class="titulo-slogan">Simplicidad y estilo</h1>
+        <h2 class="subtitulo-seccion">Tu calzado de confianza</h2>
       </div>
       <section>
         <div class="titulo-seccion">
-            <h3>Novedades</h3>
+          <h3>Novedades</h3>
         </div>
         <div class="seccion-novedades container-fluid">
-            <div class="container-novedades container-lg container-fluid row  justify-content-center">
-                <article class="tarjeta-producto" data-aos="flip-right">
-                    <h4 class="titulo-producto">Modelo Miami</h4>
-                    <img src="img/joris3.jpg" alt="Joris Alpargatas modelo Miami">
-                    <a href="" class="boton-producto">Ver más</a>
-                </article>
-                <article class="tarjeta-producto" data-aos="flip-right">
-                    <h4 class="titulo-producto">Modelo Ardenas</h4>
-                    <img src="img/joris4.jpg" alt="Joris alpargatas modelo Ardenas">
-                    <a href="" class="boton-producto">Ver más</a>
-                </article>
-                <article class="tarjeta-producto" data-aos="flip-right">
-                    <h4 class="titulo-producto">Modelo Colorado</h4>
-                    <img src="img/joris5.jpg" alt="Joris alpargatas modelo Colorado">
-                    <a href="" class="boton-producto">Ver más</a>
-                </article>
-            </div>         
+          <div class="container-novedades container-lg container-fluid row justify-content-center">
+            <article class="tarjeta-producto" data-aos="flip-right">
+              <h4 class="titulo-producto">Modelo Miami</h4>
+              <img src="img/joris3.jpg" alt="Joris Alpargatas modelo Miami" />
+              <a href="" class="boton-producto">Ver más</a>
+            </article>
+            <article class="tarjeta-producto" data-aos="flip-right">
+              <h4 class="titulo-producto">Modelo Ardenas</h4>
+              <img src="img/joris4.jpg" alt="Joris alpargatas modelo Ardenas" />
+              <a href="" class="boton-producto">Ver más</a>
+            </article>
+            <article class="tarjeta-producto" data-aos="flip-right">
+              <h4 class="titulo-producto">Modelo Colorado</h4>
+              <img src="img/joris5.jpg" alt="Joris alpargatas modelo Colorado" />
+              <a href="" class="boton-producto">Ver más</a>
+            </article>
+          </div>
         </div>
       </section>
     </div>
-  </main>  
-    <footer class="footer container-fluid">
-        <div class="footer-content container-fluid">
-            <a href="./index.html" id="logo-footer" class="d-none d-md-block"><img src="img/logo4.jpg"></a>
-            <p class="footer-copyright">Copyright &copy; Joris UY 2023</p>
-            <a href="https://instagram.com/joris.uy/"  target="_blank" class="ig-icon d-none d-sm-block"><i class="bi bi-instagram"></i></a>
-        </div>
-    </footer>
+    <!-- Carrito de compras -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasExampleLabel">Carrito</h3>
+        <button type="button" class="boton-cerrar" data-bs-dismiss="offcanvas" aria-label="Close">&times;</button>
+      </div>
+      <div class="nothingAdded active">
+        <p>No has agregado nada al carrito</p><a href="./docs/articulos.html" class="boton-producto">Explorar</a>
+      </div>
+      <div class="cart-row">
 
+      </div>
+      <div class="total-productos">
+        <span class="precio-total-producto">Total: $0000</span>
+        <button class="boton-producto">Comprar</button>
+      </div>
+    </div>
+  </main>
+  <footer class="footer container-fluid">
+    <div class="footer-content container-fluid">
+      <a href="./index.html" id="logo-footer" class="d-none d-md-block"><img src="img/logo4.jpg" /></a>
+      <p class="footer-copyright">Copyright &copy; Joris UY 2023</p>
+      <a href="https://instagram.com/joris.uy/" target="_blank" class="ig-icon d-none d-sm-block"><i
+          class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script>
-      const myModal = document.getElementById('myModal')
-      const myInput = document.getElementById('myInput')
-
-      myModal.addEventListener('shown.bs.modal', () => {
-        myInput.focus()
-      })
-    </script>
-  </body>
-   
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="/scripts/cart.js"></script>
+</body>
 
 </html>
